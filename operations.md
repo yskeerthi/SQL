@@ -1,7 +1,32 @@
-Perfect Keerthi! Now that your `students` table is ready, let’s walk through **all operations** — from **basic to advanced** — that you can perform using SQL on this table.
+ `students` table is ready, let’s walk through **all operations** 
 
 ---
 
+```sql
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT,
+    gender CHAR(1),
+    department VARCHAR(10),
+    marks INT,
+    city VARCHAR(50)
+);
+```
+insert values
+```sql
+INSERT INTO students VALUES 
+(101, 'Keerthi', 20, 'F', 'CS', 88, 'Hyderabad'),
+(102, 'Raj', 21, 'M', 'ECE', 92, 'Vizag'),
+(103, 'Anu', 22, 'F', 'IT', 78, 'Chennai'),
+(104, 'Vikram', 23, 'M', 'CS', 85, 'Bangalore'),
+(105, 'Priya', 20, 'F', 'ECE', 95, 'Hyderabad');
+```
+see the table
+```sql
+SELECT * FROM students;
+
+```
 ## 🧑‍🎓 `students` Table Structure:
 
 | Column      | Type        |
